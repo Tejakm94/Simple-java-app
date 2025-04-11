@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the Java source code into the container
-COPY HelloWorldServer.java .
+COPY /src/HelloWorldServer.java .
 
 # Compile the Java program
 RUN javac HelloWorldServer.java

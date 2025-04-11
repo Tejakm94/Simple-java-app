@@ -17,7 +17,7 @@ public class HelloWorldServer {
 
     static class MyHandler implements HttpHandler {
         public void handle(HttpExchange t) throws IOException {
-            String response = "Hello, World from Java!";
+            String response = "Hello, welcome to Hackathon, Docker";
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
